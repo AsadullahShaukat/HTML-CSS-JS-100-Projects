@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    background: #00008bcb;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loading {
+    display: flex;
+    gap: 2.2rem;
+}
+
+.item {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-color: white;
+    animation: load 0.8s ease infinite;
+}
+
+.one {
+    animation-delay: 0.3s;
+}
+.two {
+    animation-delay: 0.4s;
+}
+.three {
+    animation-delay: 0.5s;
+}
+
+@keyframes load {
+    0% {
+        width: 3rem;
+        height: 3rem;
+    }
+    50% {
+        width: 2rem;
+        height: 2rem;
+    }
+}
